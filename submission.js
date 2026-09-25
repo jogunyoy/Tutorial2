@@ -70,33 +70,4 @@ function printWelcomeMessage(username){
 
     console.log("Welcome, " + userOrPlaceholder + "!")
     return userOrPlaceholder;
-}// unreadCount: positive integer Number, null, or undefined.
-function unreadAlert(unreadCount){
-    unreadCount && console.log("You have " + unreadCount + " messages.")
-}
-
-// unreadCount: may be any type.
-function unreadAlertValidated(unreadCount){
-    typeof unreadCount === "number" && unreadCount > 0 && console.log("You have " + unreadCount + " messages.")
-}
-
-// unreadCount: String, Number, null, or undefined.
-function unreadAlertStringInput(unreadCount){
-    unreadCount && Number(unreadCount) > 0 && console.log("You have " + unreadCount + " messages.")
-}
-
-// score: Number, null, or undefined.
-function showScore(score){
-    let correctedScore = score ?? "N/A";
-
-    console.log("The score is:" + score)
-    return correctedScore;
-}
-
-// username: String (including empty string), or undefined.
-function printWelcomeMessage(username){
-    let userOrPlaceholder = username || "Mustang";
-
-    console.log("Welcome, " + userOrPlaceholder + "!")
-    return userOrPlaceholder;
 }
